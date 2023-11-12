@@ -10,13 +10,12 @@ Width обозначает ширину доски по горизонтали. 
 В случае, если конечное положение не достижимо возвратить «-1».
 Требуется разработать веб-приложение, реализующее заданный алгоритм в виде REST сервиса.
 
-Необходимо опубликовать два варианта REST endpoints:
-- endpoint /hourse/servlet/count в виде сервлета (Java Servlet)
-- endpoint /hourse/rest/count в виде Spring Controller (RestController)
+Необходимо опубликовать REST endpoints:
+- endpoint /api/v1/knights/count в виде Spring Controller (RestController)
 Входные данные передаются через параметры REST сервиса. Результат работы алгоритма печатается в теле Response.
 
 Пример: запрос вида
-http://localhost/hourse/rest/count?width=10&height=14&start=B1&end=A3
+http://localhost/api/v1/knights/count?width=10&height=14&start=B1&end=A3
 должен вернуть 1
 так как клетка A3 достижима из положения B1 за один ход.
 
